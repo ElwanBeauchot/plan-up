@@ -1,3 +1,129 @@
-body {
-    background-color: skyblue;
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    background-color: #F2E8CF;
+    font-family: Montserrat, sans-serif;
+    color: #1D2424;
+}
+
+/* Stepper.jsx */
+
+.stepper {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding-inline-start: 0;
+    position: relative;
+}
+
+.stepper-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.stepper-number {
+    color: #EEF8FA;
+    font-weight: bold;
+    font-size: 32px;
+    width: 64px;
+    height: 64px;
+    padding: 10px;
+    border-radius: 50%;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    background-color: #90E0EF;
+    box-sizing: border-box;
+}
+
+.stepper-item.active .stepper-number {
+    background-color: #0077B6;
+}
+
+.stepper-title {
+    color: #0077B6;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.stepper-line {
+    position: absolute;
+    top: 32px;
+    width: calc(100% - 64px - 8px - 8px);
+    transform: translateX(-50%);
+    height: 3px;
+    background-color: #90E0EF;
+    border-radius: 10px;
+}
+
+.stepper-line.active {
+    background-color: #0077B6;
+}
+
+/* Step */
+
+.step-core {
+    padding: 30px;
+    background-color: #EEF8FA;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 6px 4px rgba(0, 0, 0, 0.25);
+    width: 80vw;
+    margin: auto;
+}
+
+/* Step1.jsx */
+
+.step1-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.step1-content .people{
+    display: flex;
+    flex-direction: column;
+}
+
+.step1-content .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.step1-content .subtitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+.step1-content .description {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.step1-content .people .input input{
+    height: 40px;
+    margin: 0;
+}
+
+.step1-content .people .button{
+    background-color: #EEF8FA;
+    border: none;
+    font-size: 24px;
+}
+
+

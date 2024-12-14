@@ -7,7 +7,7 @@ import configPrettier from 'eslint-config-prettier';
 /** @type {import('eslint').Linter.Config[]} */
 export default [
     {
-        files: ['webpack.config.js'],
+        files: ['webpack.config.js', 'postcss.config.js', ],
         languageOptions: {
             globals: {
                 ...globals.node,

@@ -11,15 +11,18 @@
         "@symfony/ux-turbo": "file:vendor/symfony/ux-turbo/assets",
         "@symfony/webpack-encore": "^5.0.0",
         "core-js": "^3.38.0",
+        "css-loader": "^7.1.2",
         "eslint": "^9.16.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-prettier": "^5.2.1",
         "eslint-plugin-react": "^7.37.2",
         "eslint-plugin-react-hooks": "^5.1.0",
         "globals": "^15.13.0",
+        "postcss-loader": "^8.1.1",
         "prettier": "^3.4.2",
         "react-dom": "^18.0",
         "regenerator-runtime": "^0.13.9",
+        "style-loader": "^4.0.0",
         "webpack": "^5.74.0",
         "webpack-cli": "^5.1.0",
         "webpack-notifier": "^1.15.0"
@@ -35,7 +38,9 @@
         "format": "prettier --write ."
     },
     "dependencies": {
+        "autoprefixer": "^10.4.20",
         "react": "^18.0",
+        "react-datepicker": "^7.5.0",
         "react-router-dom": "^7.0.2"
     }
 }
